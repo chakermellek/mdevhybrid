@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Acivité1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="BlueSky.min.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <script>
+        $(document).bind('mobileinit',function(){
+            $.mobile.changePage.defaults.changeHash = false;
+            $.mobile.hashListeningEnabled = false;
+            $.mobile.pushStateEnabled = false;
+        });
+    </script>
+    <script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+
+
+
+</head>
+<body>
+<div data-role="page" id="index" data-theme="c">
+    <div data-role="header">
+        <a href="#index" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="flip">Accueil</a>
+        <a href="#" class="ui-btn" data-rel="back" data-transition="fade">Précédent</a>
+    </div>
+    <div data-role="main" class="ui-content">
+        <br>
+        <div>
+            <p>
+                Description :", puis le paragraphe suivant : "Cette application est un
+                Cette application est un exemple d'une application hybride générée via Apache Cordova. Elle comporte quatre
+                exemple d'une application hybride générée via Apache
+
+                interfaces dont l'accueil. Une interface autre interface permet d'afficher vos contacts.
+
+                interfaces dont l'accueil. Une interface autre interface permet d'afficher vos contacts.
+
+                interfaces dont l'accueil. Une interface autre interface permet d'afficher vos contacts.
+
+                Une autre permet d'afficher votre position. Finalement, une interface donne des
+
+                autre permet d'afficher votre position. Finalement, une interface donne des
+
+                autre permet d'afficher votre position. Finalement, une interface donne des
+
+                informations techniques sur l'application."
+
+                informations techniques sur l'application.</p>
+        </div></div>
+
+    <div data-role="footer" class="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#contacts"  data-transition="flow">Contacts</a> </li>
+                <li><a href="#emplacement" data-transition="pop">Emplacement</a> </li>
+                <li><a href="#apropos" data-transition="slide">A propos</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="contacts"  data-theme="c">
+    <div data-role="header">
+        <a href="#index" class="ui-btn ui-icon-home ui-btn-icon-left">Accueil</a>
+        <h1>Contacts</h1>
+        <a href="#" class="ui-btn" data-rel="back">Précédent</a>
+    </div>
+    <div data-role="main" class="ui-content">
+        <br>
+        <div>
+            <ul data-role="listview">
+                <li>
+                    <a href="#pfoulen">Foulen Ben Foulen</a>
+                    <div data-role="panel" id="pfoulen"  data-position="right" data-display="overlay">
+                        <div class="ui-field-contain">
+                            <input type="text" name="fname" id="fname" value="Foulen">
+                            <input type="text" name="num" id="num" value="9999999">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                <li>
+                <a href="#pfoulena">Foulena Bent Foulen</a>
+                <div data-role="panel" id="pfoulena"  data-position="right" data-display="overlay">
+                    <div class="ui-field-contain">
+                        <input type="text" name="fname" id="namef" value="Foulena">
+                        <input type="text" name="numf" id="numf" value="2222222">
+                    </div></div></li>
+
+            </ul>
+        </div>
+    </div>
+    <h1></h1>
+    <h1></h1>
+
+    <div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#contacts"  data-transition="flow">Contacts</a> </li>
+                <li><a href="#emplacement" data-transition="pop">Emplacement</a> </li>
+                <li><a href="#apropos" data-transition="slide">A propos</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="emplacement"  data-theme="c">
+    <div data-role="header">
+        <a href="#index" class="ui-btn ui-icon-home ui-btn-icon-left">Accueil</a>
+        <a href="#" class="ui-btn" data-rel="back">Précédent</a>
+    </div>
+    <div data-role="main" class="ui-content">
+        <div>
+            <p> Altitude : 0</p>
+            <p> Longitude: 0</p>
+            <p> Latitude : 0</p>
+
+        </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#contacts"  data-transition="flow">Contacts</a> </li>
+                <li><a href="#emplacement" data-transition="pop">Emplacement</a> </li>
+                <li><a href="#apropos" data-transition="slide">A propos</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="apropos" data-theme="c">
+    <div data-role="header">
+        <a href="#index" class="ui-btn ui-icon-home ui-btn-icon-left">Accueil</a>
+        <a href="#" class="ui-btn" data-rel="back">Précédent</a>
+    </div>
+    <div data-role="main" class="ui-content">
+        <br>
+        <div>
+            <p> Version : 0</p>
+            <p> Système: 0</p>
+            <p> Auteur : 0</p>
+            <p> Page Web : 0</p>
+
+        </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#contacts"  data-transition="flow">Contacts</a> </li>
+                <li><a href="#emplacement" data-transition="pop">Emplacement</a> </li>
+                <li><a href="#apropos" data-transition="slide">A propos</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
